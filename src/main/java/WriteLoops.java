@@ -225,12 +225,18 @@ public class WriteLoops {
     public int checkServerStatus() {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
-        
+        while (serverIsRunning()) {
+            waitFor(5);
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-        
+
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
+        if (!(serverIsRunning())) {
+            sendEmergencyText("Help!" + adminPhoneNumber);
+            tryServerRestart();
+        }
         return w;
     }
 
@@ -239,12 +245,15 @@ public class WriteLoops {
     // and if it is, add 7 to “i”
     public int loop50by7() {
         int w = 0;
+        int i = 7;
+        while (i<50) {
+            i = i + 7;
 
 
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         return w;
     }
 
@@ -276,12 +285,15 @@ public class WriteLoops {
     public int rewriteFooAsFor() {
         int w = 0;
         int sumOfThrees = 0;
+        for (int i = 0; i<threes_array.length; i++) {
+            sumOfThrees = sumOfThrees + threes_array[i];
 
- 
+
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
+
         System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
 
@@ -293,12 +305,15 @@ public class WriteLoops {
     public int rewriteFooAsWhile() {
         int w = 0;
         int sumOfThrees = 0;
+        int i = 0;
+        while (i < threes_array.length) {
+            sumOfThrees = sumOfThrees + threes_array[i];
 
- 
+
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
 
@@ -317,11 +332,18 @@ public class WriteLoops {
         boolean onTime = true;
 
         // ADD YOUR CODE here.
- 
+        boolean yardNeedsMowed = true;
+        while (isSummer()) {
+            if (yardNeedsMowed) {
+                yellAtJuniorToMowLawn();
+            }
+
+
             // be sure to call
             w = w + 1;
             // each time inside the loop
-        
+        }
+        sendJuniorBackToSchool("Go Back to School");
         return w;
     }
 
