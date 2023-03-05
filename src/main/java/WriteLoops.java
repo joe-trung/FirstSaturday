@@ -213,7 +213,7 @@ public class WriteLoops {
             // calling
             w = w + 1;
             // each time through the inner loop
-        } while (runningScore < highestScore)
+        } while (runningScore < highestScore);
 
         return w >= 3;
     }
@@ -355,12 +355,14 @@ public class WriteLoops {
     public int tallyVote1() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
+        for(int i=0; i<numberOfVotes;i++) {
+            System.out.println(voteTallies[i]);
 
- 
+
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         return w;
     }
 
@@ -370,12 +372,16 @@ public class WriteLoops {
     public int tallyVote2() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
+        int idx = 0;
+        while (idx<numberOfVotes) {
+            System.out.println(voteTallies[idx]);
+            idx++;
 
 
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         return w;
     }
 
