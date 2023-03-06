@@ -1,4 +1,4 @@
-package src.main.java;
+package src.java;
 
 /**
  * Write a description of class src.main.java.WriteIFs here.
@@ -14,9 +14,9 @@ public class WriteIFs
         if (!(player1.isAlive())) {
             displayGameOver(player1);
         }
-        // Write an IF statement that checks “player1.isAlive()” 
+        // Write an IF statement that checks “player1.isAlive()”
         // and if that’s false, calls “displayGameOver(player1)”
-     
+
     }
     
     public String thermoSTAT(int room) {

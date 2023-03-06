@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import src.main.java.WriteLoops;
+import src.java.WriteLoops;
 
 /**
  * The test class src.test.java.WriteLoopsTest.
@@ -126,5 +126,85 @@ public class WriteLoopsTest
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkServerStatus());
+    }
+
+    @Test
+    public void oneToFive() {
+    }
+
+    @Test
+    public void oneToTen() {
+    }
+
+    @Test
+    public void startAtTwentyOne() {
+    }
+
+    @Test
+    public void countDown() {
+    }
+
+    @Test
+    public void byTwoTo32() {
+    }
+
+    @Test
+    public void countDownFrom5000() {
+    }
+
+    @Test
+    public void nestedFors() {
+    }
+
+    @Test
+    public void helloZipCode() {
+    }
+
+    @Test
+    public void simpleLoops() {
+    }
+
+    @Test
+    public void driveHome() {
+    }
+
+    @Test
+    public void checkGameScore() {
+    }
+
+    @Test
+    public void checkGameScoreDoWhile() {
+    }
+
+    @Test
+    public void checkServerStatus() {
+    }
+
+    @Test
+    public void loop50by7() {
+    }
+
+    @Test
+    public void foo() {
+    }
+
+    @Test
+    public void rewriteFooAsFor() {
+    }
+
+    @Test
+    public void rewriteFooAsWhile() {
+    }
+
+    @Test
+    public void manageYardAndJunior() {
+    }
+
+    @Test
+    public void tallyVote1() {
+    }
+
+    @Test
+    public void tallyVote2() {
     }
 }

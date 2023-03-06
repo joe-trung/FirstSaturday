@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import src.main.java.WriteIFs;
+import src.java.WriteIFs;
 
 /**
  * The test class src.test.java.WriteIFsTest.
@@ -110,4 +110,23 @@ public class WriteIFsTest
         assertEquals(1, writeIFs1.tt_s);
     }
 
+    @Test
+    public void playerDied() {
+    }
+
+    @Test
+    public void thermoSTAT() {
+    }
+
+    @Test
+    public void fireplaceControl() {
+    }
+
+    @Test
+    public void checkFuel() {
+    }
+
+    @Test
+    public void isAlive() {
+    }
 }

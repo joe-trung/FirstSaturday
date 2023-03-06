@@ -1,4 +1,4 @@
-package src.main.java;
+package src.java;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -457,10 +457,10 @@ public class WriteLoops {
             summer++;
             return false;
         }
-    private void sendEmergencyText(String mesg, String phone) {
+    private void sendEmergencyText(String mesg) {
     }
 
-    private void tryServerRestart(String mesg, String phone) {
+    private void tryServerRestart() {
     }
 
     int serverStatus = 5;
