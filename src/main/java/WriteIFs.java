@@ -11,7 +11,7 @@ public class WriteIFs
  
     public void playerDied(boolean player1) {
 
-        if (!(player1.isAlive())) {
+        if (!isAlive(player1)) {
             displayGameOver(player1);
         }
         // Write an IF statement that checks “player1.isAlive()”
